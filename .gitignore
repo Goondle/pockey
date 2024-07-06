@@ -1,0 +1,68 @@
+# Android Studio
+.idea/
+.gradle/
+build/
+
+# Logs
+*.log
+
+# Android-specific files
+*.apk
+*.ap_
+*.dex
+*.class
+
+# Java-specific files
+*.class
+
+# Generated files
+gen/
+bin/
+out/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# User-specific files
+*.iml
+*.ipr
+*.iws
+*.swp
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# Android Studio
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+# NDK
+obj/
