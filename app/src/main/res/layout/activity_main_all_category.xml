@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/main_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_home_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_background_back"
+        android:layout_width="362dp"
+        android:layout_height="562dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_backitem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <ListView
+        android:id="@+id/list2"
+        android:layout_width="338dp"
+        android:layout_height="224dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toBottomOf="@+id/main_back_back_item2" />
+
+    <Button
+        android:id="@+id/baseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="base"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Назад"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dobButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/dobButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="dob"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Добавить"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_background_back"
+        app:layout_constraintVertical_bias="0.203" />
+
+    <ImageView
+        android:id="@+id/main_back_back_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backitem"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toTopOf="@+id/main_background_back" />
+
+
+    <ImageView
+        android:id="@+id/main_back_back_item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backitem"
+        app:layout_constraintStart_toStartOf="@+id/list"
+        app:layout_constraintTop_toBottomOf="@+id/list" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="341dp"
+        android:layout_height="189dp"
+
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toBottomOf="@+id/main_back_back_item" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Расходы"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toTopOf="@+id/main_back_back_item" />
+
+    <TextView
+        android:id="@+id/textViewd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Доходы"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toTopOf="@+id/main_back_back_item2" />
+
+
+    <!--        android:layout_above="@+id/lineopus"-->
+
+
+    <!--    <ListView-->
+    <!--        android:id="@+id/list"-->
+    <!--        android:layout_width="361dp"-->
+    <!--        android:layout_height="518dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/addButton" />-->
+
+    <!--    <ListView-->
+    <!--        android:id="@+id/list1"-->
+    <!--        android:layout_width="361dp"-->
+    <!--        android:layout_height="518dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/addButton"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

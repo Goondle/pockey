@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Pockey</string>
+
+
+    <string name="rate">Расходы</string>
+    <string name="income">Доходы</string>
+
+    <string name="ratee">Расход</string>
+    <string name="incomee">Доход</string>
+    <string name="budget">Бюджет</string>
+    <string name="rate_all">Все расходы</string>
+    <string name="income_all">Все доходы</string>
+
+    <string name="day">День</string>
+    <string name="week">Неделя</string>
+    <string name="month">Месяц</string>
+
+
+    <string name="analytics">Аналитика</string>
+    <string name="history">История</string>
+    <string name="statistic">Статистика</string>
+    <string name="block2">Будущее</string>
+
+    <string name="info">О приложении</string>
+    <string name="info_info">О приложении</string>
+    <string name="info_info_prog">О приложении</string>
+    <string name="info_info_progg">Данное приложение является дипломным проектом.\nТакже у приложение не может быть багов, ведь если нет приложения, то нет и багов.\n</string>
+
+
+    <string name="back">Назад</string>
+    <string name="textsum">Сумма:</string>
+    <string name="textcategory">Категория:</string>
+    <string name="textonoff">Выбранная:</string>
+    <string name="textonoffinfo">Выбрано:</string>
+    <string name="textcomment">Комментарий:</string>
+
+
+    <string name="textinfo">Приложение находится в разработке.\nАстрономы объявили время разработки.\nКоличество багов и вылетов увеличелось вдвое!</string>
+    <string name="data_settings">Данные</string>
+
+
+</resources>

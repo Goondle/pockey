@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.pockey.QRActivity">
+
+
+    <ImageView
+        android:id="@+id/main_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_home_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/main_background_back2"
+        android:layout_width="381dp"
+        android:layout_height="414dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_backitem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015" />
+
+
+    <ImageView
+        android:id="@+id/main_back_back_item_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backitem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back2"
+        app:layout_constraintTop_toTopOf="@+id/main_background_back2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/main_back_back_item_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backitem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back2"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailAddress"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Ссылка"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_back_back_item_9"
+        app:layout_constraintTop_toTopOf="@+id/main_back_back_item_9" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Сумма"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_back_back_item_10"
+        app:layout_constraintTop_toTopOf="@+id/main_back_back_item_10" />
+
+    <TextView
+        android:id="@+id/inSubject4"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="64dp"
+        android:text="Сумма"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_back_back_item_10"
+        app:layout_constraintTop_toBottomOf="@+id/main_back_back_item_10" />
+
+    <TextView
+        android:id="@+id/txtEmailAddress"
+        android:layout_width="339dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:text="Ссылка: "
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+    android:id="@+id/btnSend"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:onClick="save"
+    android:text="Добавить средства"
+    app:layout_constraintBottom_toTopOf="@+id/buttonback1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.494"
+    app:layout_constraintStart_toStartOf="parent" />
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/inBody"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="92dp"-->
+<!--        android:text="Строка проверки - "-->
+<!--        android:textSize="16dp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/txtEmailAddress"-->
+<!--        tools:layout_editor_absoluteX="-8dp" />-->
+
+<!--    <TextView-->
+<!--    android:id="@+id/inSubject"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_alignParentTop="true"-->
+<!--    android:layout_marginTop="24dp"-->
+<!--    android:text="Первая часть -  "-->
+<!--    android:textSize="16dp"-->
+<!--    android:textStyle="bold"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/inBody"-->
+<!--    tools:layout_editor_absoluteX="0dp" />-->
+
+    <!--<TextView-->
+<!--    android:id="@+id/inSubject5"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_alignParentTop="true"-->
+<!--    android:layout_marginTop="52dp"-->
+<!--    android:text="Email Address: "-->
+<!--    android:textSize="16dp"-->
+<!--    android:textStyle="bold"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/inSubject4"-->
+<!--    tools:layout_editor_absoluteX="0dp" />-->
+
+<!--<TextView-->
+<!--    android:id="@+id/inSubject6"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_alignParentTop="true"-->
+<!--    android:text="Email Address: "-->
+<!--    android:textSize="16dp"-->
+<!--    android:textStyle="bold"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/inSubject5"-->
+<!--    tools:layout_editor_absoluteX="0dp" />-->
+
+<!--<TextView-->
+<!--    android:id="@+id/inSubject7"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_alignParentTop="true"-->
+<!--    android:text="Email Address: "-->
+<!--    android:textSize="16dp"-->
+<!--    android:textStyle="bold"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/inSubject6"-->
+<!--    tools:layout_editor_absoluteX="0dp" />-->
+
+
+<Button
+    android:id="@+id/buttonback1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:text="@string/back"
+    android:textColor="@color/white"
+    android:textSize="22sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

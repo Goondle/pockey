@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!--    <EditText-->
+    <!--        android:id="@+id/purpose"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:hint="Цель/состояние/задача"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/sum"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent" />-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/selection"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textSize="26sp"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"></TextView>-->
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/spinner"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="24dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/selection" />-->
+
+
+        <ImageView
+            android:id="@+id/main_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_home_background"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="-54dp" />
+
+    <ImageView
+        android:id="@+id/main_background_back"
+        android:layout_width="377dp"
+        android:layout_height="572dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_backitem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <ImageView
+        android:id="@+id/main_back_back_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backitem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toTopOf="@+id/main_background_back"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/buttonback1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="194dp"
+        android:layout_height="37dp"
+        android:text="Категории:"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toTopOf="@+id/main_background_back"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <ListView
+        android:id="@+id/listcategory"
+        android:layout_width="370dp"
+        android:layout_height="473dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_background_back"
+        app:layout_constraintEnd_toEndOf="@+id/main_background_back"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toTopOf="@+id/main_background_back"
+        app:layout_constraintVertical_bias="0.656" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--tools:context=".MainActivity">-->
+<!--&lt;!&ndash;    <EditText&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/purpose"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:hint="Цель/состояние/задача"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintBottom_toTopOf="@+id/sum"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintLeft_toLeftOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintRight_toRightOf="parent" />&ndash;&gt;-->
+<!--<TextView-->
+<!--    android:id="@+id/selection"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:textSize="26sp"-->
+<!--    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--    app:layout_constraintTop_toTopOf="parent"></TextView>-->
+
+<!--<Spinner-->
+<!--    android:id="@+id/spinner"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginLeft="24dp"-->
+<!--    android:layout_marginTop="8dp"-->
+<!--    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/selection" />-->
+
+<!--<EditText-->
+<!--    android:id="@+id/sum"-->
+<!--    android:layout_width="250dp"-->
+<!--    android:layout_height="50dp"-->
+<!--    android:hint="Введите сумму"-->
+<!--    android:textColor="@color/purple_700"-->
+<!--    android:textColorHint="@color/black"-->
+<!--    app:layout_constraintBottom_toTopOf="@+id/category"-->
+<!--    app:layout_constraintHorizontal_bias="0.807"-->
+<!--    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--    app:layout_constraintRight_toRightOf="parent"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/spinner" />-->
+
+<!--<EditText-->
+<!--    android:id="@+id/category"-->
+<!--    android:layout_width="250dp"-->
+<!--    android:layout_height="50dp"-->
+<!--    android:hint="Введите Категорию"-->
+<!--    app:layout_constraintBottom_toTopOf="@+id/switch1"-->
+<!--    app:layout_constraintHorizontal_bias="0.807"-->
+<!--    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--    app:layout_constraintRight_toRightOf="parent"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/sum" />-->
+
+<!--<Switch-->
+<!--    android:id="@+id/switch1"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:showText="true"-->
+<!--    android:text="Цель"-->
+<!--    android:textOff="Расход"-->
+<!--    android:textOn="Доход"-->
+<!--    app:layout_constraintBottom_toTopOf="@+id/comment"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintHorizontal_bias="0.534"-->
+
+<!--    app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--<EditText-->
+<!--    android:id="@+id/comment"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:hint="Введите Комментарий"-->
+<!--    app:layout_constraintBottom_toTopOf="@+id/saveButton"-->
+<!--    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--    app:layout_constraintRight_toRightOf="parent"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/category" />-->
+
+<!--<Button-->
+<!--    android:id="@+id/saveButton"-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginTop="24dp"-->
+<!--    android:onClick="save"-->
+<!--    android:text="Сохранить"-->
+<!--    app:layout_constraintHorizontal_weight="1"-->
+<!--    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--    app:layout_constraintRight_toLeftOf="@+id/deleteButton"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/comment" />-->
+
+
+<!--<Button-->
+<!--    android:id="@+id/deleteButton"-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginTop="24dp"-->
+<!--    android:onClick="delete"-->
+<!--    android:text="Удалить"-->
+<!--    app:layout_constraintHorizontal_weight="1"-->
+<!--    app:layout_constraintLeft_toRightOf="@+id/saveButton"-->
+<!--    app:layout_constraintRight_toRightOf="parent"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/comment" />-->
+
+<!--<TextView-->
+<!--    android:id="@+id/textView15"-->
+<!--    android:layout_width="80dp"-->
+<!--    android:layout_height="35dp"-->
+<!--    android:layout_marginTop="68dp"-->
+<!--    android:layout_marginEnd="16dp"-->
+<!--    android:text="@string/textsum"-->
+<!--    android:textColor="@color/black"-->
+<!--    android:textSize="22dp"-->
+<!--    app:layout_constraintEnd_toStartOf="@+id/sum"-->
+<!--    app:layout_constraintHorizontal_bias="0.764"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--<TextView-->
+<!--    android:id="@+id/textView16"-->
+<!--    android:layout_width="130dp"-->
+<!--    android:layout_height="35dp"-->
+<!--    android:layout_marginStart="16dp"-->
+<!--    android:layout_marginTop="128dp"-->
+<!--    android:text="@string/textcategory"-->
+<!--    android:textColor="@color/black"-->
+<!--    android:textSize="22dp"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

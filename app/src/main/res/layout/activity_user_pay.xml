@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/main_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main_home_background"
+                tools:layout_editor_absoluteX="-40dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+
+    <ImageView
+        android:id="@+id/main_background_back"
+        android:layout_width="381dp"
+        android:layout_height="593dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_backitem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <TextView
+        android:id="@+id/category9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Категория"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/main_background_back"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toBottomOf="@+id/main_back_back_item_5" />
+
+    <ImageView
+        android:id="@+id/main_back_back_item_5"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/backitem"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toBottomOf="@+id/sum" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/textcategory"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_back_back_item_5"
+        app:layout_constraintTop_toBottomOf="@+id/sum" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:showText="true"
+        android:text="Цель"
+        android:textColorHint="@color/black"
+        android:textOff="Р"
+
+        android:textOn="Д"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/category9"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:showText="true"
+        android:text="Уведомление"
+        android:textColorHint="@color/black"
+
+        android:textOff="Off"
+        android:textOn="On"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/main_back_back_item_8"
+        app:layout_constraintTop_toBottomOf="@+id/main_back_back_item_8" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:showText="true"
+        android:text="Актив"
+        android:textColorHint="@color/black"
+
+        android:textOff="Off"
+        android:textOn="On"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/switch2"
+        app:layout_constraintTop_toTopOf="@+id/switch2" />
+
+    <TextView
+        android:id="@+id/textrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ratee"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textincome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/incomee"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Выбор"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/category9"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <ImageView
+        android:id="@+id/main_back_back_item_3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/backitem"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <ImageView
+        android:id="@+id/main_back_back_item_2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/backitem"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toBottomOf="@+id/comment" />
+
+    <ImageView
+        android:id="@+id/main_back_back_item_6"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/backitem"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toBottomOf="@+id/btn_time" />
+
+    <ImageView
+        android:id="@+id/main_back_back_item_7"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/backitem"
+        app:layout_constraintStart_toStartOf="@+id/main_back_back_item_8"
+        app:layout_constraintTop_toBottomOf="@+id/switch2" />
+
+    <ImageView
+        android:id="@+id/main_back_back_item_8"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/backitem"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toBottomOf="@+id/btn_date_end" />
+
+    <ImageView
+        android:id="@+id/main_back_back_item_4"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/backitem"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <ImageView
+        android:id="@+id/main_back_back_item_"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/backitem"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toTopOf="@+id/main_background_back" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:text="@string/textcomment"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_back_back_item_3"
+        app:layout_constraintTop_toTopOf="@+id/main_back_back_item_3" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Дата начала"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_back_back_item_2"
+        app:layout_constraintTop_toTopOf="@+id/main_back_back_item_2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Дата окончания"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_back_back_item_6"
+        app:layout_constraintTop_toBottomOf="@+id/btn_time" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Период "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_back_back_item_7"
+        app:layout_constraintTop_toTopOf="@+id/main_back_back_item_7" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Напоминание"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_back_back_item_8"
+        app:layout_constraintTop_toTopOf="@+id/main_back_back_item_8" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/textsum"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_back_back_item_4"
+        app:layout_constraintTop_toTopOf="@+id/main_back_back_item_4" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Платеж"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toTopOf="@+id/main_back_back_item_" />
+
+    <EditText
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:hint="Введите сумму"
+        android:inputType="number"
+        android:textColor="@color/purple_700"
+        android:textColorHint="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toBottomOf="@+id/main_back_back_item_4" />
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:hint="Введите Комментарий"
+        android:textColorHint="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toBottomOf="@+id/main_back_back_item_3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:hint="Введите наименование платежа"
+        android:textColorHint="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toBottomOf="@+id/main_back_back_item_" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textonoffinfo"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/category9"
+        app:layout_constraintVertical_bias="0.019" />
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="save"
+        android:text="Сохранить"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/deleteButton"
+        app:layout_constraintTop_toBottomOf="@+id/main_background_back" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="delete"
+        android:text="Удалить"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/saveButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_background_back" />
+
+    <Button
+        android:id="@+id/buttonback1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <TextView
+        android:id="@+id/picked_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/btn_date"
+        android:inputType="date"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_date"
+        app:layout_constraintTop_toTopOf="@+id/btn_date" />
+
+    <TextView
+        android:id="@+id/picked_date_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/btn_date"
+        android:inputType="date"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_date_end"
+        app:layout_constraintTop_toTopOf="@+id/btn_date_end" />
+
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/picked_time"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Дата"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toBottomOf="@+id/main_back_back_item_2" />
+
+    <Button
+        android:id="@+id/btn_date_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/picked_time"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Дата"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toBottomOf="@+id/main_back_back_item_6" />
+
+    <TextView
+        android:id="@+id/selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/main_back_back_item_7"></TextView>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/main_background_back"
+        app:layout_constraintTop_toBottomOf="@+id/main_back_back_item_7" />
+
+    <TextView
+        android:id="@+id/picked_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picked_date"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toStartOf="@+id/btn_date"
+        android:layout_toLeftOf="@+id/btn_date"
+        android:inputType="time"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_time"
+        app:layout_constraintTop_toTopOf="@+id/btn_time" />
+
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_date"
+        android:layout_alignStart="@+id/btn_date"
+        android:layout_alignLeft="@+id/btn_date"
+        android:layout_marginStart="8dp"
+        android:text="Время"
+        app:layout_constraintStart_toEndOf="@+id/picked_date"
+        app:layout_constraintTop_toTopOf="@+id/btn_date" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".MainActivity">-->
+    <!--&lt;!&ndash;    <EditText&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:id="@+id/purpose"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:hint="Цель/состояние/задача"&ndash;&gt;-->
+    <!--&lt;!&ndash;        app:layout_constraintBottom_toTopOf="@+id/sum"&ndash;&gt;-->
+    <!--&lt;!&ndash;        app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;        app:layout_constraintLeft_toLeftOf="parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;        app:layout_constraintRight_toRightOf="parent" />&ndash;&gt;-->
+    <!--<TextView-->
+    <!--    android:id="@+id/selection"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:textSize="26sp"-->
+    <!--    app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--    app:layout_constraintTop_toTopOf="parent"></TextView>-->
+
+    <!--<Spinner-->
+    <!--    android:id="@+id/spinner"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginLeft="24dp"-->
+    <!--    android:layout_marginTop="8dp"-->
+    <!--    app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/selection" />-->
+
+    <!--<EditText-->
+    <!--    android:id="@+id/sum"-->
+    <!--    android:layout_width="250dp"-->
+    <!--    android:layout_height="50dp"-->
+    <!--    android:hint="Введите сумму"-->
+    <!--    android:textColor="@color/purple_700"-->
+    <!--    android:textColorHint="@color/black"-->
+    <!--    app:layout_constraintBottom_toTopOf="@+id/category"-->
+    <!--    app:layout_constraintHorizontal_bias="0.807"-->
+    <!--    app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--    app:layout_constraintRight_toRightOf="parent"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/spinner" />-->
+
+    <!--<EditText-->
+    <!--    android:id="@+id/category"-->
+    <!--    android:layout_width="250dp"-->
+    <!--    android:layout_height="50dp"-->
+    <!--    android:hint="Введите Категорию"-->
+    <!--    app:layout_constraintBottom_toTopOf="@+id/switch1"-->
+    <!--    app:layout_constraintHorizontal_bias="0.807"-->
+    <!--    app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--    app:layout_constraintRight_toRightOf="parent"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/sum" />-->
+
+    <!--<Switch-->
+    <!--    android:id="@+id/switch1"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:showText="true"-->
+    <!--    android:text="Цель"-->
+    <!--    android:textOff="Расход"-->
+    <!--    android:textOn="Доход"-->
+    <!--    app:layout_constraintBottom_toTopOf="@+id/comment"-->
+    <!--    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--    app:layout_constraintHorizontal_bias="0.534"-->
+
+    <!--    app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<EditText-->
+    <!--    android:id="@+id/comment"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:hint="Введите Комментарий"-->
+    <!--    app:layout_constraintBottom_toTopOf="@+id/saveButton"-->
+    <!--    app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--    app:layout_constraintRight_toRightOf="parent"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/category" />-->
+
+    <!--<Button-->
+    <!--    android:id="@+id/saveButton"-->
+    <!--    android:layout_width="0dp"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginTop="24dp"-->
+    <!--    android:onClick="save"-->
+    <!--    android:text="Сохранить"-->
+    <!--    app:layout_constraintHorizontal_weight="1"-->
+    <!--    app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--    app:layout_constraintRight_toLeftOf="@+id/deleteButton"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/comment" />-->
+
+
+    <!--<Button-->
+    <!--    android:id="@+id/deleteButton"-->
+    <!--    android:layout_width="0dp"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginTop="24dp"-->
+    <!--    android:onClick="delete"-->
+    <!--    android:text="Удалить"-->
+    <!--    app:layout_constraintHorizontal_weight="1"-->
+    <!--    app:layout_constraintLeft_toRightOf="@+id/saveButton"-->
+    <!--    app:layout_constraintRight_toRightOf="parent"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/comment" />-->
+
+    <!--<TextView-->
+    <!--    android:id="@+id/textView15"-->
+    <!--    android:layout_width="80dp"-->
+    <!--    android:layout_height="35dp"-->
+    <!--    android:layout_marginTop="68dp"-->
+    <!--    android:layout_marginEnd="16dp"-->
+    <!--    android:text="@string/textsum"-->
+    <!--    android:textColor="@color/black"-->
+    <!--    android:textSize="22dp"-->
+    <!--    app:layout_constraintEnd_toStartOf="@+id/sum"-->
+    <!--    app:layout_constraintHorizontal_bias="0.764"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<TextView-->
+    <!--    android:id="@+id/textView16"-->
+    <!--    android:layout_width="130dp"-->
+    <!--    android:layout_height="35dp"-->
+    <!--    android:layout_marginStart="16dp"-->
+    <!--    android:layout_marginTop="128dp"-->
+    <!--    android:text="@string/textcategory"-->
+    <!--    android:textColor="@color/black"-->
+    <!--    android:textSize="22dp"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
